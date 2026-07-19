@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "VibeFit Liquid Tabata Premium",
+  "version": "5.6",
+  "description": "Liquid Glass Theme - History Panel & Mute Toggle Engine",
+  "content_scripts": [{
+    "matches": ["https://aistudio.google.com/*"],
+    "js": ["content.js"]
+  }],
+  "host_permissions": [
+    "https://cdn.jsdelivr.net/*"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["videos/*.mp4"],
+    "matches": ["https://aistudio.google.com/*"]
+  }]
+}
